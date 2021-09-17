@@ -32,9 +32,9 @@ export function TaskList() {
       isComplete: false,
     }
 
-    const result = tasks.find(task => task.id === task.id);
+    const isTask = tasks.find(task => task.id === task.id);
 
-    if (result) {
+    if (isTask) {
       const newtask: Task = {
         id: generatedId(),
         title: newTaskTitle,
